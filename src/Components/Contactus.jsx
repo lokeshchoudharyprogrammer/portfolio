@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from "@emailjs/browser";
+import githubicon from "../Img/icons8-github-64.png"
+import linkdinicon from "../Img/icons8-linkedin-48.png"
 const Contactus = () => {
     const form = useRef();
     const [name, Setname] = useState()
@@ -25,44 +27,23 @@ const Contactus = () => {
         );
     };
     return (
-
         <>
-            <h1 className="project-heading" id='contact-us-id' style={{ color: ' #c110ef', paddingLeft: "39px", marginTop: "65px" }}>
-                Contact <strong className="purple"> Us </strong>
+            <h1 className="project-heading" id='contact' style={{ color: ' #c110ef', paddingLeft: "39px", marginTop: "65px" }}>
+                <strong className="purple"> Contact </strong>
             </h1>
-            <div className="contact-us">
+            <div id="contact">
+                <a id="contact-linkedin" href="https://www.linkedin.com/in/lokeshchoudharyprogrammer/" target="_blank">
+                    <img width="60px" src={githubicon} alt='' />
 
+                </a>
+                <a href="https://github.com/lokeshchoudharyprogrammer" target="_blank">
+                    <img width="60px" id="contact-github" src={linkdinicon} alt='' />
 
-                <form className="form" onSubmit={handleSubmit} ref={form}>
-                    <div className="flex">
-                        <label>
-                            <input required placeholder onChange={(e) => Setname(e.target.value)} type="text" className="input" />
-                            <span>first name</span>
-                        </label>
-                        <label>
-                            <input required placeholder onChange={(e) => Setlastname(e.target.value)} type="text" className="input" />
-                            <span>last name</span>
-                        </label>
-                    </div>
-                    <label>
-                        <input required placeholder onChange={(e) => Setemail(e.target.value)} type="email" className="input" />
-                        <span>email</span>
-                    </label>
-                    <label>
-                        <input required type="tel" placeholder onChange={(e) => Setnumbers(e.target.value)} className="input" />
-                        <span>contact number</span>
-                    </label>
-                    <label>
-                        <textarea required rows={3} placeholder onChange={(e) => Setsms(e.target.value)} className="input01" defaultValue={""} />
-                        <span>message</span>
-                    </label>
-                    <button className="fancy" >
-                        <span className="top-key" />
-                        <span className="text">submit</span>
-                        <span className="bottom-key-1" />
-                        <span className="bottom-key-2" />
-                    </button>
-                </form>
+                </a>
+            </div>
+            <div class='mail-number'>
+                <h3 class="chakra-heading css-9f6g39" id="contact-phone"> Mobile No : +91 6377300329</h3>
+                <h3 class="chakra-heading css-9f6g39" id="contact-email">Email : lokeshchoudhary2026@gmail.com</h3>
             </div>
         </>
     )

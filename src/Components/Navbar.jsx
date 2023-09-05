@@ -45,7 +45,7 @@ export default function Simple() {
 
     return (
         <>
-            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} id='nav-menu'>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <IconButton
                         size={'md'}
@@ -55,13 +55,15 @@ export default function Simple() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box>Lokesh Choudhary</Box>
+                        <Box> 𝐿𝒞</Box>
                         <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
 
+                            <NavLink href={'#skills'}>Home</NavLink>
+                            <NavLink href={'#projects'}>Project</NavLink>
+                            <NavLink href={'#contact'}>Contact</NavLink>
+                            <NavLink href={'#contact'}>About</NavLink>
                             <NavLink href={'#skills'}>Skills</NavLink>
-                            <NavLink href={'#projectlink'}>Projects</NavLink>
                             <NavLink href={'#resume'}>Resume</NavLink>
-                            <NavLink href={'#contact-us-id'}>Contact Me</NavLink>
 
                         </HStack>
                     </HStack>
@@ -89,11 +91,12 @@ export default function Simple() {
                     <Box pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
 
+                            <NavLink href={'#skills'}>Home</NavLink>
+                            <NavLink href={'#projects'}>Project</NavLink>
+                            <NavLink href={'#contact'}>Contact</NavLink>
+                            <NavLink href={'#contact'}>About</NavLink>
                             <NavLink href={'#skills'}>Skills</NavLink>
-                            <NavLink href={'#projectlink'}>Projects</NavLink>
-                            <NavLink href={'#resume'}>Resume</NavLink>
-                            <NavLink href={'#contact-us-id'}>Contact Me</NavLink>
-                        </Stack>
+                            <NavLink href={'#resume'}>Resume</NavLink>   </Stack>
                     </Box>
                 ) : null}
             </Box>

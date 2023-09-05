@@ -22,7 +22,7 @@ const Skills = () => {
         <>
             <div>
                 <h1 className="project-heading" id='skills' style={{ color: ' #c110ef', paddingLeft: "39px", marginTop: "65px" }}>
-                    Professional <strong className="purple">Skillset </strong>
+                     <strong className="purple">Skills </strong>
                 </h1>
                 <Row style={{ display: "flex", justifyContent: "center", paddingBottom: "50px", flexWrap: 'wrap' }}>
 

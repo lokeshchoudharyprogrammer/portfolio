@@ -17,13 +17,13 @@ function Resume() {
     return (
         <div>
             <h1 className="project-heading" id='resume' style={{ color: ' #c110ef', paddingLeft: "39px",paddingBottom:"32px" }}>
-                Download <strong className="purple"> Resume </strong>
+                 <strong className="purple"> Resume </strong>
             </h1>
 
             <Container fluid className="resume-section">
 
                 <Row style={{ justifyContent: "center", position: "relative", display: "flex" }}>
-                    <a href={pdf} target="_blank" rel="noopener noreferrer" download>
+                    <a  id='resume-link-1' href={pdf} target="_blank" rel="noopener noreferrer" download>
                        
                         <button variant="primary"
                             href={pdf}
@@ -32,7 +32,7 @@ function Resume() {
                             class='resume-btn'
                             onClick={handleDownloadPDF}>
                            <span style={{display:"flex",alignItems:"center"}}> <AiOutlineDownload />
-                                &nbsp;Download CV</span>
+                                &nbsp;Resume</span>
                         </button>
 
 

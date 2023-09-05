@@ -8,6 +8,40 @@
   }
 }
 
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mail-number {
+
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* Apply responsive styles to the container */
+.github-stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow items to wrap to the next line on smaller screens */
+  justify-content: center;
+  /* Center align items horizontally */
+  gap: 20px;
+  /* Add spacing between the images */
+  max-width: 100%;
+  /* Ensure the container doesn't exceed the screen width */
+}
+
+/* Apply styles to individual images */
+.github-stats-container img {
+  max-width: 100%;
+  /* Make sure images don't exceed their container width */
+  height: auto;
+  /* Maintain aspect ratio while resizing */
+}
+
+
 .splash-image {
   animation: fadeIn 2s ease-in-out;
   border-radius: 27px;
@@ -434,7 +468,7 @@
 .resume-btn {
   background: transparent;
   position: relative;
-  padding: 5px 15px;
+  padding: 4px 44px;
   display: flex;
   align-items: center;
   font-size: 17px;
@@ -687,7 +721,8 @@
 
 .fancy:hover {
   color: #ffffff;
-  background:  #4c35b1;;
+  background: #4c35b1;
+  ;
 }
 
 .fancy:hover::before {
@@ -712,10 +747,10 @@
 }
 
 
-.contact-us{
+.contact-us {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -758,7 +793,7 @@
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
-  
+
   display: flex;
   gap: 79px;
   justify-content: center;

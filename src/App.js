@@ -15,8 +15,8 @@ function App() {
       <Simple />
       <Profile />
       <Skills />
-      <GithubCal />
       <Projects />
+      <GithubCal />
       <Resume />
       <Contactus />
       <Footer />

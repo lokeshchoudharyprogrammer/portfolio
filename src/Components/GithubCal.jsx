@@ -1,23 +1,18 @@
 import React from 'react'
 import GitHubCalendar from 'react-github-calendar';
 
-
 const GithubCal = () => {
 
 
     return (
         <>
-            <h1 className="project-heading" style={{ paddingBottom: "20px",paddingLeft: "39px" }}>
-                Days I <strong className="purple">Code</strong>
+            <h1 className="project-heading" style={{ paddingBottom: "20px", paddingLeft: "39px" }}>
+                Github <strong className="purple"> Activity</strong>
             </h1>
-            <div className='githubcode' style={{ display: "flex", justifyContent: "center", paddingBottom: "10px", alignItems: "center", flexDirection: "column" }}>
-                <GitHubCalendar
-                    username="lokeshchoudharyprogrammer"
-                    blockSize={15}
-                    blockMargin={5}
-                    color="#c084f5"
-                    fontSize={16}
-                />
+            <div class="github-stats-container">
+                <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=lokeshchoudharyprogrammer" alt='' />
+                <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokeshchoudharyprogrammer&amp;layout=compact" alt='' />
+                <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=lokeshchoudharyprogrammer&amp;show_icons=true&amp;theme=radical" alt='' />
             </div>
 
         </>
